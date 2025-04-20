@@ -10,6 +10,27 @@
 </head>
 
 <body>
+<div id="popup-overlay"></div>
+
+<div id="popup">
+  <h2>Hi sir!</h2>
+  <p>This page is a showcase template crafted using BharatUI components</p>
+  <button class="popup-close" onclick="closePopup()">Close</button>
+</div>
+
+<script>
+  // Show the popup when the window loads
+  window.onload = function() {
+    document.getElementById('popup').style.display = 'block';
+    document.getElementById('popup-overlay').style.display = 'block';
+  };
+
+  // Function to close the popup
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('popup-overlay').style.display = 'none';
+  }
+</script>
   <div class="background"></div>
   <bh-navbar brandingText="Lorem" brandingTextColor="black" backgroundcolor="transparent">
     <bh-button variant="link" color="black" hover-color="gray">Home</bh-button>
