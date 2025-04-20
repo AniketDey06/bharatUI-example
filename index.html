@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="stylesheet" href="style.css">
+  <title>BharatUI</title>
+</head>
+
+<body>
+  <div class="background"></div>
+  <bh-navbar brandingText="Lorem" brandingTextColor="black" backgroundcolor="transparent">
+    <bh-button variant="link" color="black" hover-color="gray">Home</bh-button>
+    <bh-button variant="link" color="black" hover-color="gray">Pricing</bh-button>
+    <bh-button variant="link" color="black" hover-color="gray">Docs</bh-button>
+    <bh-button variant="link" color="black" hover-color="gray">About Us</bh-button>
+    <bh-button variant="link" color="black" hover-color="gray">Contact Us</bh-button>
+  </bh-navbar>
+
+  <div class="herotext">
+    <h1>Empowering Goa with Reliable,</h1>
+    <h1>Sustainable Electricity</h1>
+    <p>Access your electricity services with ease. Pay bills online, report power outages, track usage,<br>and stay
+      informed about maintenance – all in one place.</p>
+  </div>
+
+  <div class="btnhero">
+    <bh-button size="small" onClick="test()" borderradius="500px"
+      style="font-family: 'Geist'; font-style: normal; font-weight: 400; font-size: 20px; line-height: 140%; text-align: center; letter-spacing: -0.05em; color: #FFFFFF;">Pay
+      Bill Online</bh-button>
+  </div>
+
+  <img src="Asset/dashboard.png" alt="Dashboard Preview" class="panelimg">
+
+  
+  <section class="announcements">
+    <h2 class="title">Government Announcements</h2>
+    <div class="cards">
+        <div class="card">
+            <bh-card border-radius="1rem" variant="vertical" backgroundcolor="white" color="black" headertextcolor="black" pragraphtextcolor="black">
+                <h2 slot="card-title">📘 Important Notice</h2>
+                <bh-divider slot="card-divider" variant="horizontal" width="100%" height="1px" marginTop="10px"></bh-divider>
+                <h4 slot="card-subtitle">Lorem ipsum dolor sit.</h4>
+                <p slot="card-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur delectus porro, cupiditate fugit deleniti sequi.
+                </p>
+            </bh-card>
+        </div>
+        <div class="card">
+            <bh-card border-radius="1rem" variant="vertical" backgroundcolor="white" color="black" headertextcolor="black" pragraphtextcolor="black">
+                <h2 slot="card-title">🆕 New Scheme</h2>
+                <bh-divider slot="card-divider" variant="horizontal" width="100%" height="1px" marginTop="10px"></bh-divider>
+                <h4 slot="card-subtitle">Lorem ipsum dolor sit.</h4>
+                <p slot="card-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur delectus porro, cupiditate fugit deleniti sequi.
+                </p>
+            </bh-card>
+        </div>
+        <div class="card">
+            <bh-card border-radius="1rem" variant="vertical" backgroundcolor="white" color="black" headertextcolor="black" pragraphtextcolor="black">
+                <h2 slot="card-title">🔧 Maintenance Alert</h2>
+                <bh-divider slot="card-divider" variant="horizontal" width="100%" height="1px" marginTop="10px"></bh-divider>
+                <h4 slot="card-subtitle">Lorem ipsum dolor sit.</h4>
+                <p slot="card-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur delectus porro, cupiditate fugit deleniti sequi.
+                </p>
+            </bh-card>
+        </div>
+    </div>
+  </section>
+
+  <h2 class="title">Services</h2>
+  <div class="card-container">
+
+    <div class="content">
+        <bh-card variant="payment-success" imgUrl="./Asset/connection.webp" backgroundcolor="white" headertextcolor="black"
+            pragraphtextcolor="gray">
+            <h2 slot="card-title" style="text-align: center">New Connection</h2>
+            <p slot="card-description" style="text-align: center; margin-bottom: 10px;">
+              Lorem ipsum dolor sit amet.
+
+            </p>
+            <div slot="card-button">
+                <bh-button size="medium" background="black" color="white" width="170px">Apply Now</bh-button>
+            </div>
+        </bh-card>
+    </div>
+    <div class="content">
+        <bh-card variant="payment-success"
+            imgUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6v7j-oZuHSlCSzWnheMVNMQf6Wr5ljqcbAg&s"
+            backgroundcolor="white" headertextcolor="black" pragraphtextcolor="gray">
+            <h2 slot="card-title" style="text-align: center">Pay Bill</h2>
+            <p slot="card-description" style="text-align: center; margin-bottom: 10px;">
+              Lorem ipsum dolor sit amet.
+            </p>
+            <div slot="card-button">
+                <bh-button size="medium" background="black" color="white" width="170px">Pay Now</bh-button>
+            </div>
+        </bh-card>
+    </div>
+    <div class="content">
+        <bh-card variant="payment-success"
+            imgUrl="https://media.istockphoto.com/id/1204054586/vector/swear-bubble-thin-line-icon-concept-of-explicitives-like-abstract-sign-exclamation-hashtag.jpg?s=612x612&w=0&k=20&c=ENj957s5rw0k4pBeamQxnxaE6wmlWS_IuX873g6zoPw="
+            backgroundcolor="white" headertextcolor="black" pragraphtextcolor="gray">
+            <h2 slot="card-title" style="text-align: center">Complaints</h2>
+            <p slot="card-description" style="text-align: center; margin-bottom: 10px;">
+              Lorem ipsum dolor sit amet.
+
+            </p>
+            <div slot="card-button">
+                <bh-button size="medium" background="black" color="white" width="170px">Report Issue</bh-button>
+            </div>
+        </bh-card>
+    </div>
+    <div class="content">
+        <bh-card variant="payment-success"
+            imgUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMv08hBK86WreanSil5BZat7RlrStdXL33vQ&s"
+            backgroundcolor="white" headertextcolor="black" pragraphtextcolor="gray">
+            <h2 slot="card-title" style="text-align: center">History</h2>
+            <p slot="card-description" style="text-align: center; margin-bottom: 10px;">
+              Lorem ipsum dolor sit amet.
+
+            </p>
+            <div slot="card-button">
+                <bh-button size="medium" background="black" color="white" width="170px">View History</bh-button>
+            </div>
+        </bh-card>
+    </div>
+</div>
+
+<div class="carousel-parent">
+    <h1 class="title">Our Projects</h1>
+    <div class="carousel-container">
+        <bh-carousel id="basic-carousel" height="300px" autoplay="true" interval="3000" variant="default"
+            animation="slide">
+            <bh-carousel-item
+                image="https://cdn.discordapp.com/attachments/1359191583634886736/1362464865024868525/zbynek-burival-V4ZYJZJ3W4M-unsplash.jpg?ex=68047809&is=68032689&hm=a8476a9799fbef53d7ce08cee97fa0fe7c6d3fe7d02b82f08058170249a7d853&"
+                alt="Library Interior" title="Modern Library"
+                caption="A peaceful place for reading and learning"></bh-carousel-item>
+            <bh-carousel-item
+                image="https://cdn.discordapp.com/attachments/1359191583634886736/1362464866224574695/american-public-power-association-VuR4oHZ3ucc-unsplash.jpg?ex=68047809&is=68032689&hm=d842046fd34a741acc66785001a9fd0155f6ebe0a9287b89cd7d7c5a1c3e5118&"
+                alt="Study Area" title="Study Space"
+                caption="Dedicated areas for focused learning"></bh-carousel-item>
+            <bh-carousel-item
+                image="https://cdn.discordapp.com/attachments/1359191583634886736/1362464867864281098/nikola-johnny-mirkovic-Z_dnvde5wxc-unsplash.jpg?ex=68047809&is=68032689&hm=3af2541ebb03d0f0ecbbb1d678b914b9a22a15ffc0345ae0cac58367a5a105d6&"
+                alt="Book Collection" title="Book Collection"
+                caption="Extensive collection of books and resources"></bh-carousel-item>
+        </bh-carousel>
+    </div>
+</div>
+
+<div class="contact">
+    <h1 class="title">Contact Us</h1>
+    <div class="contact-container">
+        <div class="contact-details">
+            <h2 class="handing">Get in Touch</h2>
+            <div class="wrapper">
+                <h4 class="subhanding">Head Office</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="wrapper">
+                <h4 class="subhanding">Phone</h4>
+                <p>+91-123-456-7890 (Office Hours: 9:30 AM - 6:00 PM)</p>
+            </div>
+            <div class="wrapper">
+                <h4 class="subhanding">Email</h4>
+                <p>info.lorem@gov.in</p>
+                <p>complaints.lorem@gov.in</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2 class="handing">Send Us a Message</h2>
+
+            <bh-input 
+                type="text" 
+                fontSize="16px" 
+                inputColor="black" 
+                placeholder="Your Name" 
+                border="1px solid #0063FF" 
+                width="300px" 
+                height="30px"
+                size="medium" 
+                borderRadius="8px" 
+                fontSize="24px" 
+                border="1px solid #ccc" 
+                background="#fff"
+                placeholderColor="#888" 
+                placeholderSize="16px">
+            </bh-input>
+
+            <bh-input 
+                type="text" 
+                fontSize="16px" 
+                placeholder="Your Email" 
+                border="1px solid #0063FF" 
+                width="300px" 
+                height="30px"
+                size="medium" 
+                borderRadius="8px" 
+                fontSize="24px" 
+                border="1px solid #ccc" 
+                background="#fff"
+                placeholderColor="#888" 
+                placeholderSize="16px">
+            </bh-input>
+
+            <bh-input 
+                type="text" 
+                fontSize="16px" 
+                placeholder="Subject" 
+                border="1px solid #0063FF" 
+                width="300px" 
+                height="30px"
+                size="medium" 
+                borderRadius="8px" 
+                fontSize="24px" 
+                border="1px solid #ccc" 
+                background="#fff"
+                placeholderColor="#888" 
+                placeholderSize="16px">
+            </bh-input>
+
+            <bh-input 
+                type="text" 
+                fontSize="16px" 
+                placeholder="Your Message" 
+                border="1px solid #0063FF" 
+                width="300px" 
+                height="30px"
+                size="medium" 
+                borderRadius="8px" 
+                fontSize="24px" 
+                border="1px solid #ccc" 
+                background="#fff"
+                placeholderColor="#888" 
+                placeholderSize="16px">
+            </bh-input>
+            <bh-button variant="primary" id="message"> Send Message</bh-button>
+        </div>
+    </div>
+</div>
+
+<div class="faq-container">
+    <h1 class="title">Frequently asked Question</h1>
+    <div class="faq">
+      <bh-accordion variant="outline" size="half" header="Full-width Accordion">
+        <p>This is a full-width accordion (100% width). Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero placeat accusantium necessitatibus ducimus officia praesentium atque id similique nostrum voluptate suscipit minima, blanditiis numquam, omnis non possimus iure vel minus ad eligendi vitae corrupti? Illo dolorum sequi possimus mollitia veniam officiis doloremque pariatur, consequatur error nobis, minus, consectetur ea ratione?</p>
+      </bh-accordion>
+      <bh-accordion variant="outline" size="half" header="Full-width Accordion">
+        <p>This is a full-width accordion (100% width). Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero placeat accusantium necessitatibus ducimus officia praesentium atque id similique nostrum voluptate suscipit minima, blanditiis numquam, omnis non possimus iure vel minus ad eligendi vitae corrupti? Illo dolorum sequi possimus mollitia veniam officiis doloremque pariatur, consequatur error nobis, minus, consectetur ea ratione?</p>
+      </bh-accordion>
+      <bh-accordion variant="outline" size="half" header="Full-width Accordion">
+        <p>This is a full-width accordion (100% width). Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero placeat accusantium necessitatibus ducimus officia praesentium atque id similique nostrum voluptate suscipit minima, blanditiis numquam, omnis non possimus iure vel minus ad eligendi vitae corrupti? Illo dolorum sequi possimus mollitia veniam officiis doloremque pariatur, consequatur error nobis, minus, consectetur ea ratione?</p>
+      </bh-accordion>
+        
+
+       
+
+    </div>
+</div>
+
+<div class="footer">
+
+    </bh-footer>
+
+    <bh-footer color="black" brandingText="Made By BharatUI" columnCount="2" backGroundColor="#3E88CE">
+
+        <p slot="brandingpara">Transform Your Designs
+            with BharatUI</p>
+
+        <bh-icon slot="links" name="discord" size="20px" color="#ffffff" class="icon"
+            link="https://github.com/idreamfyrei/coming-soonUI/blob/main/README.md"></bh-icon>
+
+        <bh-icon name="github" slot="links" size="20px" color="#ffffff" class="icon"
+            link="https://github.com/idreamfyrei/coming-soonUI/blob/main/README.md"></bh-icon>
+
+        <bh-button variant="link" size="medium" href="https://www.example.com/" color="white" slot="colone"
+            hover-color="sky">
+            Home
+        </bh-button>
+        <bh-button variant="link" size="medium" href="https://www.example.com/" color="white" slot="colone"
+            hover-color="sky">
+            Pricing
+        </bh-button>
+        <bh-button variant="link" size="medium" href="https://www.example.com/" color="white" slot="colone"
+            hover-color="sky">
+            Docs
+        </bh-button>
+
+        <bh-button variant="link" size="medium" href="https://www.example.com/" color="white" slot="coltwo"
+            hover-color="sky">
+            Privacy Policy
+        </bh-button>
+        <bh-button variant="link" size="medium" href="https://www.example.com/" color="white" slot="coltwo"
+            hover-color="sky">
+            Terms of Service
+        </bh-button>
+        <bh-button variant="link" size="medium" href="https://www.example.com/" color="white" slot="coltwo"
+            hover-color="sky">
+            Pricing Policy
+        </bh-button>
+
+    </bh-footer>
+</div>
+<!-- Script -->
+<script type="module" src="https://cdn.jsdelivr.net/npm/bharat-ui@1.0.29/dist/public/bharat-ui.umd.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+
+</html>
